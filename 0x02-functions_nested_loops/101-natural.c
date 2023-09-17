@@ -1,18 +1,19 @@
-#include<iostream>
-using namespace std;
+#include <stdio.h>
 
-int main() {
+/**
+*main - prints the sum of multiples
+*Return: 0
+*/
 
-  int sum = 0;
-
-	for (int i = 3; i < 1000; i++) {
-
-		if (i%3==0 or i%5==0)
-
-			sum += i;
+int main(void)
+{
+	int n, sum = 0;
+	
+	for (n = 0; n < 1024; n++)
+	{
+		if ((n % 3) == 0 || (n % 5) == 0)
+			sum += n;
 	}
-
-	cout << sum;
-
-	return 0;
+	printf("%d\n", sum);
+	return (0);
 }
